@@ -218,13 +218,13 @@ public class AddAccessoryActivity extends Activity implements BluetoothDevicePai
                     fm.getFragment(savedInstanceState,
                             SAVED_STATE_CONTENT_FRAGMENT);
         }
-        sendCecOtpCommand((result) -> {
-            if (result == HdmiControlManager.RESULT_SUCCESS) {
-                Log.i(TAG, "One Touch Play successful");
-            } else {
-                Log.i(TAG, "One Touch Play failed");
-            }
-        });
+        //sendCecOtpCommand((result) -> {
+        //    if (result == HdmiControlManager.RESULT_SUCCESS) {
+        //        Log.i(TAG, "One Touch Play successful");
+        //    } else {
+        //        Log.i(TAG, "One Touch Play failed");
+        //    }
+        //});
 
         rearrangeViews();
     }
